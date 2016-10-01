@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE1002511DA05AB600B2A862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002501DA05AB600B2A862 /* AppDelegate.swift */; };
+		CE1002531DA05AB600B2A862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002521DA05AB600B2A862 /* ViewController.swift */; };
+		CE1002561DA05AB600B2A862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1002541DA05AB600B2A862 /* Main.storyboard */; };
+		CE1002581DA05AB600B2A862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1002571DA05AB600B2A862 /* Assets.xcassets */; };
+		CE10025B1DA05AB600B2A862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1002591DA05AB600B2A862 /* LaunchScreen.storyboard */; };
+		CE1002661DA05AB600B2A862 /* BeetClock_A1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002651DA05AB600B2A862 /* BeetClock_A1Tests.swift */; };
+		CE1002711DA05AB600B2A862 /* BeetClock_A1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002701DA05AB600B2A862 /* BeetClock_A1UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE1002621DA05AB600B2A862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE1002451DA05AB600B2A862 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE10024C1DA05AB600B2A862;
+			remoteInfo = BeetClock_A1;
+		};
+		CE10026D1DA05AB600B2A862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE1002451DA05AB600B2A862 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE10024C1DA05AB600B2A862;
+			remoteInfo = BeetClock_A1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE10024D1DA05AB600B2A862 /* BeetClock_A1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeetClock_A1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1002501DA05AB600B2A862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE1002521DA05AB600B2A862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE1002551DA05AB600B2A862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE1002571DA05AB600B2A862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE10025A1DA05AB600B2A862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE10025C1DA05AB600B2A862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1002611DA05AB600B2A862 /* BeetClock_A1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeetClock_A1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1002651DA05AB600B2A862 /* BeetClock_A1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetClock_A1Tests.swift; sourceTree = "<group>"; };
+		CE1002671DA05AB600B2A862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE10026C1DA05AB600B2A862 /* BeetClock_A1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeetClock_A1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1002701DA05AB600B2A862 /* BeetClock_A1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetClock_A1UITests.swift; sourceTree = "<group>"; };
+		CE1002721DA05AB600B2A862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE10024A1DA05AB600B2A862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10025E1DA05AB600B2A862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1002691DA05AB600B2A862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE1002441DA05AB600B2A862 = {
+			isa = PBXGroup;
+			children = (
+				CE10024F1DA05AB600B2A862 /* BeetClock_A1 */,
+				CE1002641DA05AB600B2A862 /* BeetClock_A1Tests */,
+				CE10026F1DA05AB600B2A862 /* BeetClock_A1UITests */,
+				CE10024E1DA05AB600B2A862 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE10024E1DA05AB600B2A862 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE10024D1DA05AB600B2A862 /* BeetClock_A1.app */,
+				CE1002611DA05AB600B2A862 /* BeetClock_A1Tests.xctest */,
+				CE10026C1DA05AB600B2A862 /* BeetClock_A1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE10024F1DA05AB600B2A862 /* BeetClock_A1 */ = {
+			isa = PBXGroup;
+			children = (
+				CE1002501DA05AB600B2A862 /* AppDelegate.swift */,
+				CE1002521DA05AB600B2A862 /* ViewController.swift */,
+				CE1002541DA05AB600B2A862 /* Main.storyboard */,
+				CE1002571DA05AB600B2A862 /* Assets.xcassets */,
+				CE1002591DA05AB600B2A862 /* LaunchScreen.storyboard */,
+				CE10025C1DA05AB600B2A862 /* Info.plist */,
+			);
+			path = BeetClock_A1;
+			sourceTree = "<group>";
+		};
+		CE1002641DA05AB600B2A862 /* BeetClock_A1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1002651DA05AB600B2A862 /* BeetClock_A1Tests.swift */,
+				CE1002671DA05AB600B2A862 /* Info.plist */,
+			);
+			path = BeetClock_A1Tests;
+			sourceTree = "<group>";
+		};
+		CE10026F1DA05AB600B2A862 /* BeetClock_A1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1002701DA05AB600B2A862 /* BeetClock_A1UITests.swift */,
+				CE1002721DA05AB600B2A862 /* Info.plist */,
+			);
+			path = BeetClock_A1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE10024C1DA05AB600B2A862 /* BeetClock_A1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1002751DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1" */;
+			buildPhases = (
+				CE1002491DA05AB600B2A862 /* Sources */,
+				CE10024A1DA05AB600B2A862 /* Frameworks */,
+				CE10024B1DA05AB600B2A862 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeetClock_A1;
+			productName = BeetClock_A1;
+			productReference = CE10024D1DA05AB600B2A862 /* BeetClock_A1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE1002601DA05AB600B2A862 /* BeetClock_A1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1002781DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1Tests" */;
+			buildPhases = (
+				CE10025D1DA05AB600B2A862 /* Sources */,
+				CE10025E1DA05AB600B2A862 /* Frameworks */,
+				CE10025F1DA05AB600B2A862 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE1002631DA05AB600B2A862 /* PBXTargetDependency */,
+			);
+			name = BeetClock_A1Tests;
+			productName = BeetClock_A1Tests;
+			productReference = CE1002611DA05AB600B2A862 /* BeetClock_A1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE10026B1DA05AB600B2A862 /* BeetClock_A1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE10027B1DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1UITests" */;
+			buildPhases = (
+				CE1002681DA05AB600B2A862 /* Sources */,
+				CE1002691DA05AB600B2A862 /* Frameworks */,
+				CE10026A1DA05AB600B2A862 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE10026E1DA05AB600B2A862 /* PBXTargetDependency */,
+			);
+			name = BeetClock_A1UITests;
+			productName = BeetClock_A1UITests;
+			productReference = CE10026C1DA05AB600B2A862 /* BeetClock_A1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE1002451DA05AB600B2A862 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = BeetWorks;
+				TargetAttributes = {
+					CE10024C1DA05AB600B2A862 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CE1002601DA05AB600B2A862 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CE10024C1DA05AB600B2A862;
+					};
+					CE10026B1DA05AB600B2A862 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CE10024C1DA05AB600B2A862;
+					};
+				};
+			};
+			buildConfigurationList = CE1002481DA05AB600B2A862 /* Build configuration list for PBXProject "BeetClock_A1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE1002441DA05AB600B2A862;
+			productRefGroup = CE10024E1DA05AB600B2A862 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE10024C1DA05AB600B2A862 /* BeetClock_A1 */,
+				CE1002601DA05AB600B2A862 /* BeetClock_A1Tests */,
+				CE10026B1DA05AB600B2A862 /* BeetClock_A1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE10024B1DA05AB600B2A862 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE10025B1DA05AB600B2A862 /* LaunchScreen.storyboard in Resources */,
+				CE1002581DA05AB600B2A862 /* Assets.xcassets in Resources */,
+				CE1002561DA05AB600B2A862 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10025F1DA05AB600B2A862 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10026A1DA05AB600B2A862 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE1002491DA05AB600B2A862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1002531DA05AB600B2A862 /* ViewController.swift in Sources */,
+				CE1002511DA05AB600B2A862 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10025D1DA05AB600B2A862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1002661DA05AB600B2A862 /* BeetClock_A1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1002681DA05AB600B2A862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1002711DA05AB600B2A862 /* BeetClock_A1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE1002631DA05AB600B2A862 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE10024C1DA05AB600B2A862 /* BeetClock_A1 */;
+			targetProxy = CE1002621DA05AB600B2A862 /* PBXContainerItemProxy */;
+		};
+		CE10026E1DA05AB600B2A862 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE10024C1DA05AB600B2A862 /* BeetClock_A1 */;
+			targetProxy = CE10026D1DA05AB600B2A862 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE1002541DA05AB600B2A862 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1002551DA05AB600B2A862 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE1002591DA05AB600B2A862 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE10025A1DA05AB600B2A862 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE1002731DA05AB600B2A862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE1002741DA05AB600B2A862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE1002761DA05AB600B2A862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BeetClock_A1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE1002771DA05AB600B2A862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BeetClock_A1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE1002791DA05AB600B2A862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeetClock_A1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeetClock_A1.app/BeetClock_A1";
+			};
+			name = Debug;
+		};
+		CE10027A1DA05AB600B2A862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeetClock_A1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeetClock_A1.app/BeetClock_A1";
+			};
+			name = Release;
+		};
+		CE10027C1DA05AB600B2A862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeetClock_A1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeetClock_A1;
+			};
+			name = Debug;
+		};
+		CE10027D1DA05AB600B2A862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeetClock_A1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeetClock_A1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE1002481DA05AB600B2A862 /* Build configuration list for PBXProject "BeetClock_A1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1002731DA05AB600B2A862 /* Debug */,
+				CE1002741DA05AB600B2A862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE1002751DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1002761DA05AB600B2A862 /* Debug */,
+				CE1002771DA05AB600B2A862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE1002781DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1002791DA05AB600B2A862 /* Debug */,
+				CE10027A1DA05AB600B2A862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE10027B1DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE10027C1DA05AB600B2A862 /* Debug */,
+				CE10027D1DA05AB600B2A862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE1002451DA05AB600B2A862 /* Project object */;
+}
