@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63E63973F16028FDB43CC15C /* Pods_BeetClock_A1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F434AD8095B4F236EE92D18 /* Pods_BeetClock_A1.framework */; };
 		CE1002511DA05AB600B2A862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002501DA05AB600B2A862 /* AppDelegate.swift */; };
 		CE1002531DA05AB600B2A862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002521DA05AB600B2A862 /* ViewController.swift */; };
 		CE1002561DA05AB600B2A862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1002541DA05AB600B2A862 /* Main.storyboard */; };
@@ -14,6 +15,40 @@
 		CE10025B1DA05AB600B2A862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1002591DA05AB600B2A862 /* LaunchScreen.storyboard */; };
 		CE1002661DA05AB600B2A862 /* BeetClock_A1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002651DA05AB600B2A862 /* BeetClock_A1Tests.swift */; };
 		CE1002711DA05AB600B2A862 /* BeetClock_A1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002701DA05AB600B2A862 /* BeetClock_A1UITests.swift */; };
+		CE10027F1DA05B2600B2A862 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE10027E1DA05B2600B2A862 /* CoreData.framework */; };
+		CE1002831DA05BDA00B2A862 /* BeetClock_A1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE1002811DA05BDA00B2A862 /* BeetClock_A1.xcdatamodeld */; };
+		CE10028C1DA0681000B2A862 /* Job+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002841DA0681000B2A862 /* Job+CoreDataProperties.swift */; };
+		CE10028D1DA0681000B2A862 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002851DA0681000B2A862 /* Job.swift */; };
+		CE10028E1DA0681000B2A862 /* Equipment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002861DA0681000B2A862 /* Equipment+CoreDataProperties.swift */; };
+		CE10028F1DA0681000B2A862 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002871DA0681000B2A862 /* Equipment.swift */; };
+		CE1002901DA0681000B2A862 /* Work_record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002881DA0681000B2A862 /* Work_record+CoreDataProperties.swift */; };
+		CE1002911DA0681000B2A862 /* Work_record.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1002891DA0681000B2A862 /* Work_record.swift */; };
+		CE1002921DA0681000B2A862 /* Crop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10028A1DA0681000B2A862 /* Crop+CoreDataProperties.swift */; };
+		CE1002931DA0681000B2A862 /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10028B1DA0681000B2A862 /* Crop.swift */; };
+		CE64F9D91DD5DD2400D849C5 /* Tractor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F9D71DD5DD2400D849C5 /* Tractor+CoreDataProperties.swift */; };
+		CE64F9DA1DD5DD2400D849C5 /* Tractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F9D81DD5DD2400D849C5 /* Tractor.swift */; };
+		CE921A351DC65972002EA981 /* NewSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE921A341DC65972002EA981 /* NewSelectViewController.swift */; };
+		CEBDAEC41DD8002A00DD2001 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDAEC31DD8002A00DD2001 /* SummaryViewController.swift */; };
+		CEBDAEC61DD8004000DD2001 /* SummaryDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDAEC51DD8004000DD2001 /* SummaryDisplayViewController.swift */; };
+		CEC3D5BD1DD8DB7200B9A6B7 /* SelectDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3D5BC1DD8DB7200B9A6B7 /* SelectDateViewController.swift */; };
+		CEE57E6D1DC9F23500219AE9 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE57E6C1DC9F23500219AE9 /* TimerViewController.swift */; };
+		CEE57E701DCA033800219AE9 /* In_progress+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE57E6E1DCA033800219AE9 /* In_progress+CoreDataProperties.swift */; };
+		CEE57E711DCA033800219AE9 /* In_progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE57E6F1DCA033800219AE9 /* In_progress.swift */; };
+		CEE718DA1DCB591400E470B1 /* IPJobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE718D91DCB591400E470B1 /* IPJobsViewController.swift */; };
+		CEF0D3BD1DAE57F50052BC5D /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0D3BC1DAE57F50052BC5D /* NewItemViewController.swift */; };
+		CEF960E21DB3DAFB00E8E33A /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF960E11DB3DAFB00E8E33A /* SelectionViewController.swift */; };
+		D6111F7A1DF04ACD00CCBC65 /* SelectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6111F791DF04ACD00CCBC65 /* SelectListViewController.swift */; };
+		D64496931DEFB0B800C3AED1 /* ExportViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64496921DEFB0B800C3AED1 /* ExportViewController2.swift */; };
+		D64496971DEFBDD100C3AED1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D64496961DEFBDD100C3AED1 /* GoogleService-Info.plist */; };
+		D64496981DEFBDD100C3AED1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D64496961DEFBDD100C3AED1 /* GoogleService-Info.plist */; };
+		D64496991DEFBDD100C3AED1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D64496961DEFBDD100C3AED1 /* GoogleService-Info.plist */; };
+		D69544E81EB2059B0090B916 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69544E71EB2059B0090B916 /* SelectTimeViewController.swift */; };
+		D69544E91EB2059B0090B916 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69544E71EB2059B0090B916 /* SelectTimeViewController.swift */; };
+		D69544EA1EB2059B0090B916 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69544E71EB2059B0090B916 /* SelectTimeViewController.swift */; };
+		D6A8F3E71E585F4F006633C4 /* SynchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8F3E61E585F4F006633C4 /* SynchViewController.swift */; };
+		D6F4AAD11DF64F65004E2AB1 /* ColorBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F4AAD01DF64F65004E2AB1 /* ColorBank.swift */; };
+		DBF35BE860A4F95848370C30 /* Pods_BeetClock_A1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95698792BD71330824BB32AF /* Pods_BeetClock_A1UITests.framework */; };
+		E02DB659314FF0F0A64C9B73 /* Pods_BeetClock_A1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE27CD19F8D0E4D81D2E779 /* Pods_BeetClock_A1Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +69,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CE27CD19F8D0E4D81D2E779 /* Pods_BeetClock_A1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeetClock_A1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C2CE046A7BB94F13271038 /* Pods-BeetClock_A1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeetClock_A1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeetClock_A1/Pods-BeetClock_A1.debug.xcconfig"; sourceTree = "<group>"; };
+		1F434AD8095B4F236EE92D18 /* Pods_BeetClock_A1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeetClock_A1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC134AB1956E359A6DF1633 /* Pods-BeetClock_A1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeetClock_A1UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeetClock_A1UITests/Pods-BeetClock_A1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		46C7573EFA761AE0153B2849 /* Pods-BeetClock_A1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeetClock_A1UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeetClock_A1UITests/Pods-BeetClock_A1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BAEEF1CDBF66FBBDB70D066 /* Pods-BeetClock_A1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeetClock_A1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeetClock_A1Tests/Pods-BeetClock_A1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A622B2118A02ED55E1395D4 /* Pods-BeetClock_A1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeetClock_A1.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeetClock_A1/Pods-BeetClock_A1.release.xcconfig"; sourceTree = "<group>"; };
+		95698792BD71330824BB32AF /* Pods_BeetClock_A1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeetClock_A1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7025017C6C1EE479C91D12D /* Pods-BeetClock_A1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeetClock_A1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeetClock_A1Tests/Pods-BeetClock_A1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CE10024D1DA05AB600B2A862 /* BeetClock_A1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeetClock_A1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1002501DA05AB600B2A862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1002521DA05AB600B2A862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +91,37 @@
 		CE10026C1DA05AB600B2A862 /* BeetClock_A1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeetClock_A1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1002701DA05AB600B2A862 /* BeetClock_A1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetClock_A1UITests.swift; sourceTree = "<group>"; };
 		CE1002721DA05AB600B2A862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE10027E1DA05B2600B2A862 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE1002821DA05BDA00B2A862 /* BeetClock_A1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeetClock_A1.xcdatamodel; sourceTree = "<group>"; };
+		CE1002841DA0681000B2A862 /* Job+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE1002851DA0681000B2A862 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		CE1002861DA0681000B2A862 /* Equipment+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Equipment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE1002871DA0681000B2A862 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		CE1002881DA0681000B2A862 /* Work_record+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Work_record+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE1002891DA0681000B2A862 /* Work_record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work_record.swift; sourceTree = "<group>"; };
+		CE10028A1DA0681000B2A862 /* Crop+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Crop+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE10028B1DA0681000B2A862 /* Crop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
+		CE64F9D71DD5DD2400D849C5 /* Tractor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tractor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE64F9D81DD5DD2400D849C5 /* Tractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tractor.swift; sourceTree = "<group>"; };
+		CE921A341DC65972002EA981 /* NewSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSelectViewController.swift; sourceTree = "<group>"; };
+		CEBDAEC31DD8002A00DD2001 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		CEBDAEC51DD8004000DD2001 /* SummaryDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryDisplayViewController.swift; sourceTree = "<group>"; };
+		CEC3D5BC1DD8DB7200B9A6B7 /* SelectDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDateViewController.swift; sourceTree = "<group>"; };
+		CEE57E6C1DC9F23500219AE9 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		CEE57E6E1DCA033800219AE9 /* In_progress+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "In_progress+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CEE57E6F1DCA033800219AE9 /* In_progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = In_progress.swift; sourceTree = "<group>"; };
+		CEE718D91DCB591400E470B1 /* IPJobsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPJobsViewController.swift; sourceTree = "<group>"; };
+		CEF0D3BC1DAE57F50052BC5D /* NewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
+		CEF960E11DB3DAFB00E8E33A /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		D6111F791DF04ACD00CCBC65 /* SelectListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectListViewController.swift; sourceTree = "<group>"; };
+		D64496891DEF6CD100C3AED1 /* BeetClock_A1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeetClock_A1-Bridging-Header.h"; sourceTree = "<group>"; };
+		D64496921DEFB0B800C3AED1 /* ExportViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportViewController2.swift; sourceTree = "<group>"; };
+		D64496961DEFBDD100C3AED1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D69544E71EB2059B0090B916 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
+		D6A8F3E61E585F4F006633C4 /* SynchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchViewController.swift; sourceTree = "<group>"; };
+		D6B7DEF41E964C68005C890E /* BeetClock_A 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BeetClock_A 2.xcdatamodel"; sourceTree = "<group>"; };
+		D6C3B3561E9655DD00C1E707 /* BeetClock_A1 v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BeetClock_A1 v2.xcdatamodel"; sourceTree = "<group>"; };
+		D6F4AAD01DF64F65004E2AB1 /* ColorBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +129,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE10027F1DA05B2600B2A862 /* CoreData.framework in Frameworks */,
+				63E63973F16028FDB43CC15C /* Pods_BeetClock_A1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02DB659314FF0F0A64C9B73 /* Pods_BeetClock_A1Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +146,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF35BE860A4F95848370C30 /* Pods_BeetClock_A1UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CAF974F16200D3D50A9F660 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F434AD8095B4F236EE92D18 /* Pods_BeetClock_A1.framework */,
+				0CE27CD19F8D0E4D81D2E779 /* Pods_BeetClock_A1Tests.framework */,
+				95698792BD71330824BB32AF /* Pods_BeetClock_A1UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6576517CE3876F1339BCA440 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12C2CE046A7BB94F13271038 /* Pods-BeetClock_A1.debug.xcconfig */,
+				8A622B2118A02ED55E1395D4 /* Pods-BeetClock_A1.release.xcconfig */,
+				6BAEEF1CDBF66FBBDB70D066 /* Pods-BeetClock_A1Tests.debug.xcconfig */,
+				B7025017C6C1EE479C91D12D /* Pods-BeetClock_A1Tests.release.xcconfig */,
+				46C7573EFA761AE0153B2849 /* Pods-BeetClock_A1UITests.debug.xcconfig */,
+				2EC134AB1956E359A6DF1633 /* Pods-BeetClock_A1UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE1002441DA05AB600B2A862 = {
 			isa = PBXGroup;
 			children = (
+				D64496961DEFBDD100C3AED1 /* GoogleService-Info.plist */,
+				CE10027E1DA05B2600B2A862 /* CoreData.framework */,
 				CE10024F1DA05AB600B2A862 /* BeetClock_A1 */,
 				CE1002641DA05AB600B2A862 /* BeetClock_A1Tests */,
 				CE10026F1DA05AB600B2A862 /* BeetClock_A1UITests */,
 				CE10024E1DA05AB600B2A862 /* Products */,
+				6576517CE3876F1339BCA440 /* Pods */,
+				3CAF974F16200D3D50A9F660 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +203,27 @@
 		CE10024F1DA05AB600B2A862 /* BeetClock_A1 */ = {
 			isa = PBXGroup;
 			children = (
+				CE1002801DA05B5900B2A862 /* Data Layer */,
 				CE1002501DA05AB600B2A862 /* AppDelegate.swift */,
+				D6F4AAD01DF64F65004E2AB1 /* ColorBank.swift */,
 				CE1002521DA05AB600B2A862 /* ViewController.swift */,
+				CEF0D3BC1DAE57F50052BC5D /* NewItemViewController.swift */,
+				CEF960E11DB3DAFB00E8E33A /* SelectionViewController.swift */,
+				CE921A341DC65972002EA981 /* NewSelectViewController.swift */,
+				CEE57E6C1DC9F23500219AE9 /* TimerViewController.swift */,
+				CEE718D91DCB591400E470B1 /* IPJobsViewController.swift */,
+				CEBDAEC31DD8002A00DD2001 /* SummaryViewController.swift */,
+				CEBDAEC51DD8004000DD2001 /* SummaryDisplayViewController.swift */,
+				CEC3D5BC1DD8DB7200B9A6B7 /* SelectDateViewController.swift */,
+				D69544E71EB2059B0090B916 /* SelectTimeViewController.swift */,
+				D64496921DEFB0B800C3AED1 /* ExportViewController2.swift */,
+				D6111F791DF04ACD00CCBC65 /* SelectListViewController.swift */,
+				D6A8F3E61E585F4F006633C4 /* SynchViewController.swift */,
 				CE1002541DA05AB600B2A862 /* Main.storyboard */,
 				CE1002571DA05AB600B2A862 /* Assets.xcassets */,
 				CE1002591DA05AB600B2A862 /* LaunchScreen.storyboard */,
 				CE10025C1DA05AB600B2A862 /* Info.plist */,
+				D64496891DEF6CD100C3AED1 /* BeetClock_A1-Bridging-Header.h */,
 			);
 			path = BeetClock_A1;
 			sourceTree = "<group>";
@@ -125,6 +246,26 @@
 			path = BeetClock_A1UITests;
 			sourceTree = "<group>";
 		};
+		CE1002801DA05B5900B2A862 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				CE1002811DA05BDA00B2A862 /* BeetClock_A1.xcdatamodeld */,
+				CE1002841DA0681000B2A862 /* Job+CoreDataProperties.swift */,
+				CE1002851DA0681000B2A862 /* Job.swift */,
+				CE1002861DA0681000B2A862 /* Equipment+CoreDataProperties.swift */,
+				CE1002871DA0681000B2A862 /* Equipment.swift */,
+				CE1002881DA0681000B2A862 /* Work_record+CoreDataProperties.swift */,
+				CE1002891DA0681000B2A862 /* Work_record.swift */,
+				CE10028A1DA0681000B2A862 /* Crop+CoreDataProperties.swift */,
+				CE10028B1DA0681000B2A862 /* Crop.swift */,
+				CEE57E6E1DCA033800219AE9 /* In_progress+CoreDataProperties.swift */,
+				CEE57E6F1DCA033800219AE9 /* In_progress.swift */,
+				CE64F9D71DD5DD2400D849C5 /* Tractor+CoreDataProperties.swift */,
+				CE64F9D81DD5DD2400D849C5 /* Tractor.swift */,
+			);
+			name = "Data Layer";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE1002751DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1" */;
 			buildPhases = (
+				42EF971E366F3AB9BC20BD7C /* [CP] Check Pods Manifest.lock */,
 				CE1002491DA05AB600B2A862 /* Sources */,
 				CE10024A1DA05AB600B2A862 /* Frameworks */,
 				CE10024B1DA05AB600B2A862 /* Resources */,
+				E90F3BEA2E86038531D54B95 /* [CP] Embed Pods Frameworks */,
+				574A479B6374329F8B7F2ECB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +293,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE1002781DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1Tests" */;
 			buildPhases = (
+				B5D92DA6296DF9CA1D34D602 /* [CP] Check Pods Manifest.lock */,
 				CE10025D1DA05AB600B2A862 /* Sources */,
 				CE10025E1DA05AB600B2A862 /* Frameworks */,
 				CE10025F1DA05AB600B2A862 /* Resources */,
+				A382E34463DE26D8022B03FF /* [CP] Embed Pods Frameworks */,
+				71B6CAAAD7BC99E2A47C3C8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE10027B1DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1UITests" */;
 			buildPhases = (
+				EEF212AD22F47825CB8CE150 /* [CP] Check Pods Manifest.lock */,
 				CE1002681DA05AB600B2A862 /* Sources */,
 				CE1002691DA05AB600B2A862 /* Frameworks */,
 				CE10026A1DA05AB600B2A862 /* Resources */,
+				EE910BCC77E518E7B34CD990 /* [CP] Embed Pods Frameworks */,
+				BC37F8845AA947F4E2E6C9A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,13 +343,17 @@
 				TargetAttributes = {
 					CE10024C1DA05AB600B2A862 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9ER8KECZ32;
+						LastSwiftMigration = 0820;
 					};
 					CE1002601DA05AB600B2A862 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = CE10024C1DA05AB600B2A862;
 					};
 					CE10026B1DA05AB600B2A862 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = CE10024C1DA05AB600B2A862;
 					};
 				};
@@ -230,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE10025B1DA05AB600B2A862 /* LaunchScreen.storyboard in Resources */,
+				D64496971DEFBDD100C3AED1 /* GoogleService-Info.plist in Resources */,
 				CE1002581DA05AB600B2A862 /* Assets.xcassets in Resources */,
 				CE1002561DA05AB600B2A862 /* Main.storyboard in Resources */,
 			);
@@ -239,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64496981DEFBDD100C3AED1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,18 +402,183 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64496991DEFBDD100C3AED1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42EF971E366F3AB9BC20BD7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		574A479B6374329F8B7F2ECB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeetClock_A1/Pods-BeetClock_A1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71B6CAAAD7BC99E2A47C3C8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeetClock_A1Tests/Pods-BeetClock_A1Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A382E34463DE26D8022B03FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeetClock_A1Tests/Pods-BeetClock_A1Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D92DA6296DF9CA1D34D602 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC37F8845AA947F4E2E6C9A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeetClock_A1UITests/Pods-BeetClock_A1UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E90F3BEA2E86038531D54B95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeetClock_A1/Pods-BeetClock_A1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE910BCC77E518E7B34CD990 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeetClock_A1UITests/Pods-BeetClock_A1UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF212AD22F47825CB8CE150 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE1002491DA05AB600B2A862 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A8F3E71E585F4F006633C4 /* SynchViewController.swift in Sources */,
+				D64496931DEFB0B800C3AED1 /* ExportViewController2.swift in Sources */,
 				CE1002531DA05AB600B2A862 /* ViewController.swift in Sources */,
+				CE10028C1DA0681000B2A862 /* Job+CoreDataProperties.swift in Sources */,
+				CE64F9D91DD5DD2400D849C5 /* Tractor+CoreDataProperties.swift in Sources */,
+				CEE718DA1DCB591400E470B1 /* IPJobsViewController.swift in Sources */,
+				CEE57E711DCA033800219AE9 /* In_progress.swift in Sources */,
+				CEBDAEC41DD8002A00DD2001 /* SummaryViewController.swift in Sources */,
 				CE1002511DA05AB600B2A862 /* AppDelegate.swift in Sources */,
+				CEE57E701DCA033800219AE9 /* In_progress+CoreDataProperties.swift in Sources */,
+				CE1002931DA0681000B2A862 /* Crop.swift in Sources */,
+				D6111F7A1DF04ACD00CCBC65 /* SelectListViewController.swift in Sources */,
+				CE1002901DA0681000B2A862 /* Work_record+CoreDataProperties.swift in Sources */,
+				CE64F9DA1DD5DD2400D849C5 /* Tractor.swift in Sources */,
+				CE1002831DA05BDA00B2A862 /* BeetClock_A1.xcdatamodeld in Sources */,
+				CE10028E1DA0681000B2A862 /* Equipment+CoreDataProperties.swift in Sources */,
+				CEE57E6D1DC9F23500219AE9 /* TimerViewController.swift in Sources */,
+				CEBDAEC61DD8004000DD2001 /* SummaryDisplayViewController.swift in Sources */,
+				CE1002911DA0681000B2A862 /* Work_record.swift in Sources */,
+				D69544E81EB2059B0090B916 /* SelectTimeViewController.swift in Sources */,
+				CE10028F1DA0681000B2A862 /* Equipment.swift in Sources */,
+				D6F4AAD11DF64F65004E2AB1 /* ColorBank.swift in Sources */,
+				CE10028D1DA0681000B2A862 /* Job.swift in Sources */,
+				CEF960E21DB3DAFB00E8E33A /* SelectionViewController.swift in Sources */,
+				CEC3D5BD1DD8DB7200B9A6B7 /* SelectDateViewController.swift in Sources */,
+				CEF0D3BD1DAE57F50052BC5D /* NewItemViewController.swift in Sources */,
+				CE921A351DC65972002EA981 /* NewSelectViewController.swift in Sources */,
+				CE1002921DA0681000B2A862 /* Crop+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1002661DA05AB600B2A862 /* BeetClock_A1Tests.swift in Sources */,
+				D69544E91EB2059B0090B916 /* SelectTimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1002711DA05AB600B2A862 /* BeetClock_A1UITests.swift in Sources */,
+				D69544EA1EB2059B0090B916 /* SelectTimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,68 +720,93 @@
 		};
 		CE1002761DA05AB600B2A862 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C2CE046A7BB94F13271038 /* Pods-BeetClock_A1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BeetClock_A1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BeetClock_A1/BeetClock_A1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE1002771DA05AB600B2A862 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A622B2118A02ED55E1395D4 /* Pods-BeetClock_A1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BeetClock_A1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BeetClock_A1/BeetClock_A1-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		CE1002791DA05AB600B2A862 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BAEEF1CDBF66FBBDB70D066 /* Pods-BeetClock_A1Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BeetClock_A1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeetClock_A1.app/BeetClock_A1";
 			};
 			name = Debug;
 		};
 		CE10027A1DA05AB600B2A862 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7025017C6C1EE479C91D12D /* Pods-BeetClock_A1Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BeetClock_A1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeetClock_A1.app/BeetClock_A1";
 			};
 			name = Release;
 		};
 		CE10027C1DA05AB600B2A862 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C7573EFA761AE0153B2849 /* Pods-BeetClock_A1UITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BeetClock_A1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BeetClock_A1;
 			};
 			name = Debug;
 		};
 		CE10027D1DA05AB600B2A862 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC134AB1956E359A6DF1633 /* Pods-BeetClock_A1UITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BeetClock_A1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BeetWorks.BeetClock-A1UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BeetClock_A1;
 			};
 			name = Release;
@@ -482,6 +830,7 @@
 				CE1002771DA05AB600B2A862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1002781DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +839,7 @@
 				CE10027A1DA05AB600B2A862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE10027B1DA05AB600B2A862 /* Build configuration list for PBXNativeTarget "BeetClock_A1UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,8 +848,24 @@
 				CE10027D1DA05AB600B2A862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE1002811DA05BDA00B2A862 /* BeetClock_A1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D6C3B3561E9655DD00C1E707 /* BeetClock_A1 v2.xcdatamodel */,
+				D6B7DEF41E964C68005C890E /* BeetClock_A 2.xcdatamodel */,
+				CE1002821DA05BDA00B2A862 /* BeetClock_A1.xcdatamodel */,
+			);
+			currentVersion = D6C3B3561E9655DD00C1E707 /* BeetClock_A1 v2.xcdatamodel */;
+			path = BeetClock_A1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE1002451DA05AB600B2A862 /* Project object */;
 }

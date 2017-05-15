@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Crop" representedClassName=".Crop" syncable="YES">
+        <attribute name="crop_name" attributeType="String" syncable="YES"/>
+        <relationship name="progressRelate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="In_progress" inverseName="cropRelate" inverseEntity="In_progress" syncable="YES"/>
+        <relationship name="recordRelate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Work_record" inverseName="cropRelate" inverseEntity="Work_record" syncable="YES"/>
+    </entity>
+    <entity name="Equipment" representedClassName=".Equipment" syncable="YES">
+        <attribute name="equip_name" attributeType="String" syncable="YES"/>
+        <relationship name="progressRelate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="In_progress" inverseName="equipRelate" inverseEntity="In_progress" syncable="YES"/>
+        <relationship name="recordRelate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Work_record" inverseName="equipRelate" inverseEntity="Work_record" syncable="YES"/>
+    </entity>
+    <entity name="In_progress" representedClassName=".In_progress" syncable="YES">
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start_time" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="workers" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="cropRelate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Crop" inverseName="progressRelate" inverseEntity="Crop" syncable="YES"/>
+        <relationship name="equipRelate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Equipment" inverseName="progressRelate" inverseEntity="Equipment" syncable="YES"/>
+        <relationship name="jobRelate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Job" inverseName="progressRelate" inverseEntity="Job" syncable="YES"/>
+        <relationship name="tractorRelate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tractor" inverseName="progressRelate" inverseEntity="Tractor" syncable="YES"/>
+    </entity>
+    <entity name="Job" representedClassName=".Job" syncable="YES">
+        <attribute name="job_name" attributeType="String" syncable="YES"/>
+        <relationship name="progressRelate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="In_progress" inverseName="jobRelate" inverseEntity="In_progress" syncable="YES"/>
+        <relationship name="recordRelate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Work_record" inverseName="jobRelate" inverseEntity="Work_record" syncable="YES"/>
+    </entity>
+    <entity name="Tractor" representedClassName=".Tractor" syncable="YES">
+        <attribute name="tractor_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="progressRelate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="In_progress" inverseName="tractorRelate" inverseEntity="In_progress" syncable="YES"/>
+        <relationship name="recordRelate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Work_record" inverseName="tractorRelate" inverseEntity="Work_record" syncable="YES"/>
+    </entity>
+    <entity name="Work_record" representedClassName=".Work_record" syncable="YES">
+        <attribute name="ms_worked" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="workers" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="cropRelate" maxCount="1" deletionRule="Nullify" destinationEntity="Crop" inverseName="recordRelate" inverseEntity="Crop" syncable="YES"/>
+        <relationship name="equipRelate" maxCount="1" deletionRule="Nullify" destinationEntity="Equipment" inverseName="recordRelate" inverseEntity="Equipment" syncable="YES"/>
+        <relationship name="jobRelate" maxCount="1" deletionRule="Nullify" destinationEntity="Job" inverseName="recordRelate" inverseEntity="Job" syncable="YES"/>
+        <relationship name="tractorRelate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tractor" inverseName="recordRelate" inverseEntity="Tractor" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Crop" positionX="-3800" positionY="-141" width="128" height="90"/>
+        <element name="Equipment" positionX="-4025" positionY="-279" width="128" height="90"/>
+        <element name="In_progress" positionX="-3924" positionY="-126" width="128" height="150"/>
+        <element name="Job" positionX="-4034" positionY="21" width="128" height="90"/>
+        <element name="Tractor" positionX="-3924" positionY="-126" width="128" height="90"/>
+        <element name="Work_record" positionX="-4023" positionY="-162" width="128" height="165"/>
+    </elements>
+</model>
