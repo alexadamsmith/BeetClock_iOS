@@ -29,7 +29,7 @@ class SelectListViewController: UITableViewController {
         // Change the color of the navigation bar button items to white.
         navigationController!.navigationBar.tintColor = UIColor.white
         
-        print("SELECT LIST VIEW")
+        //print("SELECT LIST VIEW")
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -49,7 +49,7 @@ class SelectListViewController: UITableViewController {
         let incoming = segue.source as! ExportViewController2
         selectList = incoming.selectItems
         
-        print("RECEIVED SELECTLISTSEGUE")
+        //print("RECEIVED SELECTLISTSEGUE")
     }
     
     
@@ -60,7 +60,7 @@ class SelectListViewController: UITableViewController {
         let incoming = segue.source as! NewSelectViewController
         selectList = incoming.selectItems
         
-        print("RECEIVED SELECTLISTEQUIPSEGUE")
+        //print("RECEIVED SELECTLISTEQUIPSEGUE")
     }
     
 
@@ -72,8 +72,8 @@ class SelectListViewController: UITableViewController {
         let incoming = segue.source as! SynchViewController
         selectList = incoming.selectItems
         
-        print("RECEIVED SELECTLISTCREWSEGUE")
-        print(selectList)
+        //print("RECEIVED SELECTLISTCREWSEGUE")
+        //print(selectList)
         
     }
     

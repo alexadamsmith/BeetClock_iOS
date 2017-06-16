@@ -8,10 +8,10 @@
 
 import UIKit
 import CoreData
-import StoreKit
+
     
 
-class NewItemViewController: UITableViewController, SKStoreProductViewControllerDelegate {
+class NewItemViewController: UITableViewController {
 
     //@IBOutlet weak var txtCrop: UITextField!
     //@IBOutlet weak var txtJob: UITextField!
@@ -31,6 +31,7 @@ class NewItemViewController: UITableViewController, SKStoreProductViewController
     @IBOutlet weak var buttonTractor: UIButton!
     @IBOutlet weak var buttonDate: UIButton!
     
+    
     @IBOutlet weak var labelCropSelect: UILabel!
     @IBOutlet weak var labelJobSelect: UILabel!
     @IBOutlet weak var labelImplementSelect: UILabel!
@@ -39,7 +40,6 @@ class NewItemViewController: UITableViewController, SKStoreProductViewController
     
     @IBOutlet weak var labelTimeWorked: UILabel!
     
-    @IBOutlet weak var buttonLeaveReview: UIButton!
     
     
     var cropList = [Crop]()
@@ -182,7 +182,7 @@ class NewItemViewController: UITableViewController, SKStoreProductViewController
         buttonWorked.backgroundColor = colorBank.GetUIColor("crop")
         buttonDate.backgroundColor = colorBank.GetUIColor("job")
         
-        buttonLeaveReview.tintColor = colorBank.GetUIColor("navbar")
+        
         
         //Set the background color
         self.tableView.backgroundColor = colorBank.GetUIColor("background")
@@ -447,28 +447,8 @@ class NewItemViewController: UITableViewController, SKStoreProductViewController
     }
 
     
-    @IBAction func tappedLeaveReview(_ sender: Any) {
-        
-        //Thanks Ramis!!
-        let appID = "1184076793"
-        let storeViewController = SKStoreProductViewController()
-        storeViewController.delegate = self
-        
-        let parameters = [ SKStoreProductParameterITunesItemIdentifier : appID]
-        storeViewController.loadProduct(withParameters: parameters) { [weak self] (loaded, error) -> Void in
-            if loaded {
-                // Parent class of self is UIViewContorller
-                self?.present(storeViewController, animated: true, completion: nil)
-            }
-        }
-        
-        //UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/us/app/beetclock/id1184076793?mt=8")!)
-    }
     
-    //Allows this view to delegate to the storeViewController
-    func productViewControllerDidFinish(viewController: SKStoreProductViewController) {
-        viewController.dismiss(animated: true, completion: nil)
-    }
+
     
     
     

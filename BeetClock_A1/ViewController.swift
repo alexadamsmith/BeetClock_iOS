@@ -145,6 +145,8 @@ class ViewController: UITableViewController {
         
         let workEntity = workList[indexPath.row]
         //let workEntity = workSort[indexPath.row]
+        
+        
         //This enables word wrapping within the cell
         cell.textLabel!.numberOfLines=0
         cell.textLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
@@ -168,8 +170,8 @@ class ViewController: UITableViewController {
         cell.textLabel!.text = "Crop: \(workEntity.cropRelate.value(forKey: "crop_name") as! String), Job: \(workEntity.jobRelate.value(forKey: "job_name") as! String), Implement: \(workEntity.equipRelate.value(forKey: "equip_name") as! String), Tractor: \(workEntity.tractorRelate.value(forKey: "tractor_name") as! String), Workers: \(workEntity.workers.stringValue), Hours: \(String(format:"%.2f", workEntity.ms_worked)), On \(dateFormat), Notes: \(workEntity.notes)"
         //Hours: \(workEntity.ms_worked.stringValue),
         
-        print("RECORD "+String(indexPath.row))
-        print(workEntity)
+        //print("RECORD "+String(indexPath.row))
+        //print(workEntity)
         
         
         //Job: \(workEntity.jobRelate?.valueForKey("job_name") as? String)"

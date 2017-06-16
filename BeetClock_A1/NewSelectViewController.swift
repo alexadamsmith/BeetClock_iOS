@@ -27,6 +27,8 @@ class NewSelectViewController: UITableViewController, GIDSignInUIDelegate {
     @IBOutlet weak var statusText: UILabel!
     @IBOutlet weak var labelImport: UILabel!
     
+    @IBOutlet weak var labelFile: UILabel!
+    
     @IBOutlet weak var isBusy: UIActivityIndicatorView!
     
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -363,7 +365,16 @@ class NewSelectViewController: UITableViewController, GIDSignInUIDelegate {
             if notification.userInfo != nil {
                 let userInfo:Dictionary<String,String?> =
                     notification.userInfo as! Dictionary<String,String?>
-                statusText.text = userInfo["statusText"]!
+
+                //Clip userInfo to obtain user name
+                let userInfoText = userInfo["statusText"]!!
+                //First clip the initial 25 characters
+                let userNameSub1 = (userInfoText as NSString).substring(from: 25)
+                //Then the last two.  This should produce the straight user name
+                let userNameDisplay = (userNameSub1 as NSString).substring(to: (userNameSub1.characters.count - 2) )
+                
+                //self.statusText.text = userInfo["statusText"]!
+                self.statusText.text = "User name: "+userNameDisplay
             }
         //} //NSNotification.Name is no longer comparable to string values.  However, I don't believe this if clause is used.
     }
@@ -480,9 +491,15 @@ class NewSelectViewController: UITableViewController, GIDSignInUIDelegate {
                 let response = object.json["response"] as! [String: AnyObject]
                 let responseSet = response["result"] as! [String: AnyObject]
                 if responseSet.count == 0 {
+                    //Show alert if no items returned
+                    let alert = UIAlertController(title: "Alert:", message: "No equipment found. Please make sure you have selected the correct workbook.", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                    //Hide busy animation and toggle requestProcessing
+                    requestProcessing = false
+                    isBusy.isHidden = true
+                    statusText.text = "Ready"
                     
-                    
-                    statusText.text = "No items returned!\n"
                 } else {
                     //Start by clearing selected items and ids
                     selectItems = []
@@ -558,9 +575,8 @@ class NewSelectViewController: UITableViewController, GIDSignInUIDelegate {
         
         if currentRequestName == "getFilesUnderRoot" {
             selectedFileIndex = incoming.chosenIndex
-        //    print("SELECTED FILE INDEX")
-        //    print(selectedFileIndex)
-            selectWorkbook.setTitle("Workbook selected: "+selectedEntry, for: UIControlState())
+        //    Set the labelFile next to the select workbook button w/ the file name
+            labelFile.text = selectedEntry
             
             importEquipment.isHidden = false
 

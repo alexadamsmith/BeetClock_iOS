@@ -297,6 +297,7 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             labelWorkbook.isHidden = true
             labelSheet.isHidden = true
             labelCrop.isHidden = true
+            populateSheet.isHidden = true
         }
     }
 
@@ -553,15 +554,15 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
     
     func callAppsScript(_ scriptName: String) {
         
-        print("CALLING ASE!")
-        print(scriptName)
+        //print("CALLING ASE!")
+        //print(scriptName)
         
         
         let baseUrl = "https://script.googleapis.com/v1/scripts/\(kScriptId):run"
         let url = GTLUtilities.url(with: baseUrl, queryParameters: nil)
         
-        print("REQUEST URL")
-        print(url)
+        //print("REQUEST URL")
+        //print(url)
         
         // Create an execution request object.
         let request = GTLObject()
@@ -571,12 +572,12 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
         
         if scriptName == "sheetNames" {
     
-            print("RETRIEVING SHEET NAMES")
+            //print("RETRIEVING SHEET NAMES")
             let fileId = fileIds[selectedFileIndex]
             
             let requestParams = [["header", fileId]]
-            print("SELECTED FILE ID")
-            print(requestParams[0][1])
+           // print("SELECTED FILE ID")
+           // print(requestParams[0][1])
             
             request.setJSONValue(requestParams, forKey: "parameters")
         } //end if sheetNames
@@ -608,29 +609,29 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
         
         if scriptName == "getCrewData" {
             
-            print("GETTING DATA FROM CREW WORKBOOK")
+           // print("GETTING DATA FROM CREW WORKBOOK")
             let fileId = fileIds[selectedFileIndex]
             
             let requestParams = [["header", fileId]]
-            print("SELECTED FILE ID")
-            print(requestParams[0][1])
+           // print("SELECTED FILE ID")
+           // print(requestParams[0][1])
             
             request.setJSONValue(requestParams, forKey: "parameters")
         } else if scriptName == "sendNewCJEU" {
-            print("SENDING CROP, JOB, EQUIPMENT AND USER DATA TO WORKBOOK")
+         //   print("SENDING CROP, JOB, EQUIPMENT AND USER DATA TO WORKBOOK")
             
             let requestParams = newCJEUParameters
-            print("DATA SEND PARAMETERS")
-            print(newCJEUParameters)
+         //   print("DATA SEND PARAMETERS")
+         //   print(newCJEUParameters)
             
             request.setJSONValue(requestParams, forKey: "parameters")
             
         } else if scriptName == "sendNewRecords" {
-            print("SENDING NEW RECORDS TO WORKBOOK")
+            //print("SENDING NEW RECORDS TO WORKBOOK")
             
             let requestParams = newRecordParameters
-            print("DATA SEND PARAMETERS")
-            print(newRecordParameters)
+            //print("DATA SEND PARAMETERS")
+            //print(newRecordParameters)
             
             request.setJSONValue(requestParams, forKey: "parameters")
         }
@@ -655,11 +656,13 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             // The API encountered a problem before the script
             // started executing.
             
-            print("API ERROR BEFORE SCRIPT EXECUTION")
-            let showAlert = "The API returned the error: "+String(describing: error?.localizedDescription)
-            statusText.text = showAlert
+           // print("API ERROR BEFORE SCRIPT EXECUTION")
+            let showAlert = "The server returned an error: "+String(describing: error?.localizedDescription)+" Please try again later."
+            let alert = UIAlertController(title: "Alert:", message: showAlert, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
-            print(showAlert)
+           // print(showAlert)
             isBusy.isHidden = true
             requestProcessing = false
             return
@@ -693,8 +696,8 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             
             // Set the output as the compiled error message.
             //statusText.text = errMessage
-            print("APPS SCRIPT EXECUTION RETURNED AN ERROR")
-          print(errMessage)
+           // print("APPS SCRIPT EXECUTION RETURNED AN ERROR")
+           //print(errMessage)
             
             let alert = UIAlertController(title: "Alert:", message: "The script returned an error.  Please make sure you have selected the correct workbook in your Google Drive.", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
@@ -770,8 +773,8 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
                         selectItems = []
                         selectIds = []
                         
-                        print("CREW RESPONSE SET")
-                        print(responseSet)
+                        //print("CREW RESPONSE SET")
+                        //print(responseSet)
                         
                         for (id, item) in responseSet {
                             //sheetString += "\t\(sheet)\n"
@@ -784,8 +787,8 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
                             
                             
                             selectIds.append(id)
-                            print("NEW SELECTITEM")
-                            print(item)
+                            //print("NEW SELECTITEM")
+                            //print(item)
                         }
                         
                     }//end if responseSet >0
@@ -802,18 +805,21 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
                 
                 if responseSet.count == 0 {
                     
-                    
-                    statusText.text = "No items returned!\n"
+                    //Show alert if no items returned
+                    let alert = UIAlertController(title: "Alert:", message: "No items returned.", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                     isBusy.isHidden = true
                     requestProcessing = false
+                    statusText.text = "Ready"
                 } else {
                     //Start by clearing selected items and ids
                     selectItems = []
                     selectIds = []
                     
                     //!!!!!!!!
-                    print("WORKBOOK RESPONSE SET")
-                    print(responseSet)
+                    //print("WORKBOOK RESPONSE SET")
+                    //print(responseSet)
                     
                     for (id, sheet) in responseSet {
                         //sheetString += "\t\(sheet)\n"
@@ -898,10 +904,10 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             
                 //!!!!!!!!
                 
-                print("RECORD"+String(i))
-                print(String(selectItems[i]))
+                //print("WORKBOOK RECORD"+String(i))
+                //print(String(selectItems[i]))
                 
-                //what the shit!  Why am I getting this Tread1: EXC_BREAKPOINT error on the isNAN check??  Supposedly occurs in response to a null value, but I've already checked for empty!  I must need another check, I guess...
+                //what the shit!  Why am I getting this Thread1: EXC_BREAKPOINT error on the isNAN check??  Supposedly occurs in response to a null value, but I've already checked for empty!  I must need another check, I guess...
                 if !selectItems[i].isEmpty && selectItems[i] != "" && selectItems[i] != "NA"{
                 
                 let isNumber = Double(selectItems[i])!.isNaN
@@ -915,16 +921,16 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             } //Record IDs are numeric, but for now I am treating them as strings
             
         }
-        print("CROP NAMES")
-        print(wsCropNames)
-        print("JOB NAMES")
-        print(wsJobNames)
-        print("EQUIP NAMES")
-        print(wsEquipNames)
-        print("USER NAMES")
-        print(wsUserNames)
-        print("RECORD IDS")
-        print(wsRecordIds)
+        //print("CROP NAMES")
+        //print(wsCropNames)
+        //print("JOB NAMES")
+        //print(wsJobNames)
+        //print("EQUIP NAMES")
+        //print(wsEquipNames)
+        //print("USER NAMES")
+        //print(wsUserNames)
+        //print("RECORD IDS")
+        //print(wsRecordIds)
         
         //Generate lists of NEW crops, jobs, equip and records!
         populateWorkbook()
@@ -976,6 +982,9 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             var workTractors = [String]()
             var workIDS = [String]()
             
+            //print("TOTAL # OF RECORDS IN DB")
+            //print(workList.count)
+            
             
             //Now go through all work records and append values to the lists above
             for i in 0...(workList.count - 1){
@@ -989,6 +998,9 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
                 
             }//end workList for
             
+            //print("DATABASE WORK IDS")
+            //print(workIDS)
+            
             //Now I can use the checkWSandDuplicates function to populate the newCropNames and newJobNames arrays
             newCropNames = checkWSandDuplicates(dbNames: workCrops, wsNames: wsCropNames)
             
@@ -1001,8 +1013,8 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             //However it should be fine to use the full list, as tractors and implements should not share the same name
             //Worst case, two copies of a single name will show up on the WS.  not a big problem
             
-            print("NEW RECORD IDS")
-            print(newRecordIds)
+            //print("NEW RECORD IDS")
+            //print(newRecordIds)
             
             var newTractorNames = checkWSandDuplicates(dbNames: workTractors, wsNames: wsEquipNames)
             var newImplemNames = checkWSandDuplicates(dbNames: workImplems, wsNames: wsEquipNames)
@@ -1026,8 +1038,8 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             // if the current user is not contined in the worksheet, add to a list of new users
             var isNewUser = true
             
-            print("WORKSHEET USER NAMES")
-            print(wsUserNames)
+            //print("WORKSHEET USER NAMES")
+            //print(wsUserNames)
             
             if wsUserNames.count > 0 {
                 for j in 0...(wsUserNames.count - 1){
@@ -1039,10 +1051,10 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             
             if isNewUser {
                 newUserNames.append(userName)
-                print ("NEW USER NAME TO APPEND")
-                print (userName)
-                print ("NEW USER NAMES APPENDED")
-                print (newUserNames)
+                //print ("NEW USER NAME TO APPEND")
+                //print (userName)
+                //print ("NEW USER NAMES APPENDED")
+                //print (newUserNames)
                 
             }
             
@@ -1052,15 +1064,15 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
             newCJEUParameters = [String:String]()
             
             //then we can add new values to it
-            print("NEW CROP NAMES COUNT")
-            print(newCropNames.count)
+            //print("NEW CROP NAMES COUNT")
+            //print(newCropNames.count)
             if newCropNames.count > 0 {
                 //Add crop names to the dictionary of parameters
                 for i in 0...(newCropNames.count - 1) {
                     let labelValue = "crop"+String(i)
                     newCJEUParameters[labelValue] = newCropNames[i]
-                    print("NEW CROP PARAMETERS")
-                    print(newCJEUParameters)
+                    //print("NEW CROP PARAMETERS")
+                    //print(newCJEUParameters)
                 }
             }
             if newJobNames.count > 0 {
@@ -1101,7 +1113,9 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
                 var isNewRecord = false
                 if newRecordIds.count > 0 {
                     for j in 0...(newRecordIds.count - 1) {
-                        if newRecordIds[j].contains(String(recordId)) {
+                        //!!!!!!!
+                        //values in newRecordIds have been rounded (as workIds); therefore we need to round the recordId here to facilitate comparison
+                        if newRecordIds[j].contains(String(round(recordId))) {
                             isNewRecord = true
                         }//end if newRecords
                     }//end for recordId
@@ -1404,18 +1418,22 @@ class ExportViewController2: UITableViewController, GIDSignInUIDelegate, MFMailC
                         
                         if cropWorkList[j].equipRelate.value(forKey: "equip_name") as! String != "No Implement" {
                             //###############*** Crashes here:
+                            if worksheetImplements.count > 0 {
                             for k in 0...(worksheetImplements.count - 1){
                                 if cropWorkList[j].equipRelate.value(forKey: "equip_name") as! String == worksheetImplements[k]{
                                     jobImplements[i] = cropWorkList[j].equipRelate.value(forKey: "equip_name") as! String
                                 }
                             } //end for worksheetImplements
+                            } //end if worksheetImplements > 0
                         }
                         if cropWorkList[j].tractorRelate.value(forKey: "tractor_name") as! String != "No Tractor" {
+                            if worksheetTractors.count > 0 {
                             for k in 0...(worksheetTractors.count - 1){
                                 if cropWorkList[j].tractorRelate.value(forKey: "tractor_name") as! String == worksheetTractors[k] {
                                     jobTractors[i] = cropWorkList[j].tractorRelate.value(forKey: "tractor_name") as! String
                                 }
-                            } //end worksheetImplements
+                            } //end worksheetTractors
+                            } //end worksheetTractors > 0
                         }
                         
                         //Then add person hours to the tally
